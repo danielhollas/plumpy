@@ -2282,10 +2282,10 @@ requires-dist = [
     { name = "pre-commit", marker = "extra == 'pre-commit'", specifier = "~=3.6" },
     { name = "pytest", marker = "extra == 'tests'", specifier = "~=8.4" },
     { name = "pytest-asyncio", marker = "extra == 'tests'", specifier = "~=0.12,<0.17" },
-    { name = "pytest-cov", marker = "extra == 'tests'", specifier = "~=4.1" },
+    { name = "pytest-cov", marker = "extra == 'tests'", specifier = "~=7.0" },
     { name = "pytest-notebook", marker = "extra == 'tests'", specifier = ">=0.8.0" },
     { name = "pyyaml", specifier = "~=6.0" },
-    { name = "shortuuid", marker = "extra == 'tests'", specifier = "==1.0.8" },
+    { name = "shortuuid", marker = "extra == 'tests'", specifier = "==1.0.13" },
     { name = "sphinx", marker = "extra == 'docs'", specifier = "~=7.2.0" },
     { name = "sphinx-book-theme", marker = "extra == 'docs'", specifier = "~=1.1.4" },
     { name = "types-pyyaml", marker = "extra == 'pre-commit'", specifier = "~=6.0" },
@@ -2575,16 +2575,17 @@ wheels = [
 
 [[package]]
 name = "pytest-cov"
-version = "4.1.0"
+version = "7.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "coverage", version = "7.10.7", source = { registry = "https://pypi.org/simple" }, extra = ["toml"], marker = "python_full_version < '3.10'" },
     { name = "coverage", version = "7.11.0", source = { registry = "https://pypi.org/simple" }, extra = ["toml"], marker = "python_full_version >= '3.10'" },
+    { name = "pluggy" },
     { name = "pytest" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7a/15/da3df99fd551507694a9b01f512a2f6cf1254f33601605843c3775f39460/pytest-cov-4.1.0.tar.gz", hash = "sha256:3904b13dfbfec47f003b8e77fd5b589cd11904a21ddf1ab38a64f204d6a10ef6", size = 63245, upload-time = "2023-05-24T18:44:56.845Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/f7/c933acc76f5208b3b00089573cf6a2bc26dc80a8aece8f52bb7d6b1855ca/pytest_cov-7.0.0.tar.gz", hash = "sha256:33c97eda2e049a0c5298e91f519302a1334c26ac65c1a483d6206fd458361af1", size = 54328, upload-time = "2025-09-09T10:57:02.113Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a7/4b/8b78d126e275efa2379b1c2e09dc52cf70df16fc3b90613ef82531499d73/pytest_cov-4.1.0-py3-none-any.whl", hash = "sha256:6ba70b9e97e69fcc3fb45bfeab2d0a138fb65c4d0d6a41ef33983ad114be8c3a", size = 21949, upload-time = "2023-05-24T18:44:54.079Z" },
+    { url = "https://files.pythonhosted.org/packages/ee/49/1377b49de7d0c1ce41292161ea0f721913fa8722c19fb9c1e3aa0367eecb/pytest_cov-7.0.0-py3-none-any.whl", hash = "sha256:3b8e9558b16cc1479da72058bdecf8073661c7f57f7d3c5f22a1c23507f2d861", size = 22424, upload-time = "2025-09-09T10:57:00.695Z" },
 ]
 
 [[package]]
@@ -3239,11 +3240,11 @@ wheels = [
 
 [[package]]
 name = "shortuuid"
-version = "1.0.8"
+version = "1.0.13"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/ce/c2/31dc2345d8e06711f3da9d65e3a72a060293057321815bc7f11a930c2529/shortuuid-1.0.8.tar.gz", hash = "sha256:9435e87e5a64f3b92f7110c81f989a3b7bdb9358e22d2359829167da476cfc23", size = 8302, upload-time = "2021-11-11T11:21:24.753Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/e2/bcf761f3bff95856203f9559baf3741c416071dd200c0fc19fad7f078f86/shortuuid-1.0.13.tar.gz", hash = "sha256:3bb9cf07f606260584b1df46399c0b87dd84773e7b25912b7e391e30797c5e72", size = 9662, upload-time = "2024-03-11T20:11:06.879Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/22/1b/dda73524fc8dd5cd3b80adcc585a49b3f43f8889453d2ed96291b2fcc860/shortuuid-1.0.8-py3-none-any.whl", hash = "sha256:44a7a86bcf24dbaba2e626cf80c779926b7c3a0d31a3a013e0d3cd1077707d23", size = 9458, upload-time = "2021-11-11T11:21:22.902Z" },
+    { url = "https://files.pythonhosted.org/packages/c0/44/21d6bf170bf40b41396480d8d49ad640bca3f2b02139cd52aa1e272830a5/shortuuid-1.0.13-py3-none-any.whl", hash = "sha256:a482a497300b49b4953e15108a7913244e1bb0d41f9d332f5e9925dba33a3c5a", size = 10529, upload-time = "2024-03-11T20:11:04.807Z" },
 ]
 
 [[package]]
