@@ -700,18 +700,6 @@ wheels = [
 ]
 
 [[package]]
-name = "importlib-resources"
-version = "5.13.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "zipp", marker = "python_full_version < '3.10'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/a5/f1/8711c49ffd121083007a24c1bff0d324c9ff621d4fdf8b4ffcb8d9e60330/importlib_resources-5.13.0.tar.gz", hash = "sha256:82d5c6cca930697dbbd86c93333bb2c2e72861d4789a11c2662b933e5ad2b528", size = 36550, upload-time = "2023-07-07T16:21:00.171Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7a/68/bd9dd6bbf06772c7accce77d0354d783333fbe712a60b08fc13540c05422/importlib_resources-5.13.0-py3-none-any.whl", hash = "sha256:9f7bd0c97b79972a6cce36a366356d16d5e13b09679c11a58f1014bfdf8e64b2", size = 32912, upload-time = "2023-07-07T16:20:58.128Z" },
-]
-
-[[package]]
 name = "iniconfig"
 version = "2.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -722,23 +710,26 @@ wheels = [
 
 [[package]]
 name = "ipykernel"
-version = "6.12.1"
+version = "6.31.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appnope", marker = "sys_platform == 'darwin'" },
+    { name = "comm" },
     { name = "debugpy" },
     { name = "ipython" },
     { name = "jupyter-client" },
+    { name = "jupyter-core" },
     { name = "matplotlib-inline" },
     { name = "nest-asyncio" },
     { name = "packaging" },
     { name = "psutil" },
+    { name = "pyzmq" },
     { name = "tornado" },
     { name = "traitlets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/62/23/374fc7d075dd0683ba0e3c95490c72856cf13e809f9957d57bab5f946097/ipykernel-6.12.1.tar.gz", hash = "sha256:0868f5561729ade444011f8ca7d3502dc9f27f7f44e20f1d5fee7e1f2b7183a1", size = 129979, upload-time = "2022-04-04T13:17:32.145Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/1d/d5ba6edbfe6fae4c3105bca3a9c889563cc752c7f2de45e333164c7f4846/ipykernel-6.31.0.tar.gz", hash = "sha256:2372ce8bc1ff4f34e58cafed3a0feb2194b91fc7cad0fc72e79e47b45ee9e8f6", size = 167493, upload-time = "2025-10-20T11:42:39.948Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0d/43/2ab8ba68d5e2c19e16d3c85685be1b28c2e57f1e2908732e9a76bf1bb5d9/ipykernel-6.12.1-py3-none-any.whl", hash = "sha256:d840e3bf1c4b23bf6939f78dcdae639c9f6962e41d17e1c084a18c3c7f972d3a", size = 130866, upload-time = "2022-04-04T13:17:30.164Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/d8/502954a4ec0efcf264f99b65b41c3c54e65a647d9f0d6f62cd02227d242c/ipykernel-6.31.0-py3-none-any.whl", hash = "sha256:abe5386f6ced727a70e0eb0cf1da801fa7c5fa6ff82147747d5a0406cd8c94af", size = 117003, upload-time = "2025-10-20T11:42:37.502Z" },
 ]
 
 [[package]]
@@ -1664,7 +1655,6 @@ dependencies = [
 
 [package.optional-dependencies]
 docs = [
-    { name = "importlib-metadata" },
     { name = "ipython" },
     { name = "kiwipy", extra = ["docs"] },
     { name = "markupsafe" },
@@ -1678,7 +1668,6 @@ pre-commit = [
     { name = "types-pyyaml" },
 ]
 tests = [
-    { name = "importlib-resources" },
     { name = "ipykernel" },
     { name = "pytest" },
     { name = "pytest-asyncio" },
@@ -1694,9 +1683,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "importlib-metadata", marker = "extra == 'docs'", specifier = "~=4.12.0" },
-    { name = "importlib-resources", marker = "extra == 'tests'", specifier = "~=5.2" },
-    { name = "ipykernel", marker = "extra == 'tests'", specifier = "==6.12.1" },
+    { name = "ipykernel", marker = "extra == 'tests'", specifier = "~=6.31.0" },
     { name = "ipython", marker = "extra == 'docs'", specifier = "~=7.0" },
     { name = "kiwipy", extras = ["docs"], marker = "extra == 'docs'", specifier = "~=0.9.0" },
     { name = "kiwipy", extras = ["rmq"], specifier = "~=0.9.0" },
