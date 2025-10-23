@@ -52,10 +52,7 @@ jobs:
                 version: 0.9.4
 
         -   name: Run pytest
-            run: uv run pytest -s --cov=plumpy tests/
-
-        -   name: Create xml coverage
-            run: coverage xml
+            run: uv run pytest --cov=plumpy tests/
 
         -   name: Upload coverage to Codecov
             if: github.repository == 'aiidateam/plumpy'
