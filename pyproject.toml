@@ -143,6 +143,12 @@ testpaths = [
 ]
 filterwarnings = []
 
+[tool.uv]
+# NOTE: When you bump the minimum uv version, you also need to change it in:
+# .pre-commit-config.yaml
+# .github/workflows/ci.yml
+required-version = ">=0.8.4"
+
 [tool.tox]
 legacy_tox_ini = """
 [tox]

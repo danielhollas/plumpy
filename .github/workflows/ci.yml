@@ -49,7 +49,7 @@ jobs:
             uses: astral-sh/setup-uv@v7
             with:
                 python-version: ${{ matrix.python-version }}
-                version: 0.9.4
+                version: 0.9.7
                 activate-environment: true
 
         -   name: Install dependencies
